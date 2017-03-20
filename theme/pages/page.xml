@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:include href="../theme/master.xsl" />
+
+  <xsl:template match="data">
+
+    <!-- content-->
+
+    <!-- /content -->
+
+    <!-- partial -->
+    <xsl:for-each select="//*">
+      <xsl:apply-templates select="." mode="some-list" />
+    </xsl:for-each>
+    <!-- /partial -->
+
+  </xsl:template>
+
+  <xsl:include href="../theme/partials/partial.xsl" />
+
+  <xsl:template match="*" mode="page-css"></xsl:template>
+  <xsl:template match="*" mode="page-js"></xsl:template>
+
+</xsl:stylesheet>
