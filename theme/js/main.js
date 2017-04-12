@@ -1,0 +1,4 @@
+/* main */
+$(document).ready(function(){
+
+});
