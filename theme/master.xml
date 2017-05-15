@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ap="http://petertron.github.io/asset_pipeline" exclude-result-prefixes="ap">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ap="http://git.io/sym-asset-pipeline" exclude-result-prefixes="ap">
   <xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" media-type="text/html" omit-xml-declaration="yes" indent="yes" />
 
   <xsl:template match="/">
@@ -10,16 +10,16 @@
         <title><xsl:value-of select="$page-title" />: <xsl:value-of select="$website-name" /></title>
         <meta name="description" content="" />
         <meta name="author" content="Craig Erskine" />
-        <link href="{ap:url-for('main.css')}" rel="stylesheet" />
+        <link href="{ap:css-url('main')}" rel="stylesheet" />
         <xsl:apply-templates match="*" mode="page-css" />
       </head>
       <body>
 
         <xsl:apply-templates />
 
-        <script src="{ap:url-for('jquery.js')}"></script>
-        <script src="{ap:url-for('plugins.js')}"></script>
-        <script src="{ap:url-for('main.js')}"></script>
+        <script src="{ap:js-url('jquery')}"></script>
+        <script src="{ap:js-url('plugins')}"></script>
+        <script src="{ap:js-url('main')}"></script>
 
         <xsl:apply-templates match="*" mode="page-js" />
 
