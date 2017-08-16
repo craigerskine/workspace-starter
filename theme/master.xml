@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ap="http://git.io/sym-asset-pipeline" exclude-result-prefixes="ap">
-  <xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" media-type="text/html" omit-xml-declaration="yes" indent="yes" />
+  <xsl:output method="xml" omit-xml-declaration="yes" encoding="UTF-8" indent="yes" />
 
   <xsl:template match="/">
+    <xsl:text disable-output-escaping="yes">&lt;</xsl:text>!DOCTYPE html<xsl:text disable-output-escaping="yes">&gt;&#10;</xsl:text>
     <html lang="en">
       <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
