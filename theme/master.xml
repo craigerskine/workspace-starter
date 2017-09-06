@@ -18,9 +18,9 @@
 
         <xsl:apply-templates />
 
-        <script src="{ap:js-url('jquery')}"></script>
-        <script src="{ap:js-url('plugins')}"></script>
-        <script src="{ap:js-url('main')}"></script>
+        <script src="{ap:js-url('jquery')}"><xsl:text> </xsl:text></script>
+        <script src="{ap:js-url('plugins')}"><xsl:text> </xsl:text></script>
+        <script src="{ap:js-url('main')}"><xsl:text> </xsl:text></script>
 
         <xsl:apply-templates match="*" mode="page-js" />
 
