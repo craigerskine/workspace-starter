@@ -6,11 +6,12 @@
     <xsl:text disable-output-escaping="yes">&lt;</xsl:text>!DOCTYPE html<xsl:text disable-output-escaping="yes">&gt;&#10;</xsl:text>
     <html lang="en">
       <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <title><xsl:value-of select="$page-title" />: <xsl:value-of select="$website-name" /></title>
         <meta name="description" content="" />
         <meta name="author" content="Craig Erskine" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link href="{ap:css-url('main')}" rel="stylesheet" />
         <xsl:apply-templates match="*" mode="page-css" />
       </head>
