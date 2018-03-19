@@ -1,4 +1,0 @@
-/* main */
-$(document).ready(function(){
-
-});

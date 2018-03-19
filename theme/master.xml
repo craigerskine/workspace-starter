@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ap="http://git.io/sym-asset-pipeline" exclude-result-prefixes="ap">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="xml" omit-xml-declaration="yes" encoding="UTF-8" indent="yes" />
 
   <xsl:template match="/">
@@ -12,16 +12,16 @@
         <meta name="description" content="" />
         <meta name="author" content="Craig Erskine" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link href="{ap:css-url('main')}" rel="stylesheet" />
+        <link href="/workspace/theme/assets/css/main.css" rel="stylesheet" />
         <xsl:apply-templates match="*" mode="page-css" />
       </head>
       <body>
 
         <xsl:apply-templates />
 
-        <script src="{ap:js-url('jquery')}"><xsl:text> </xsl:text></script>
-        <script src="{ap:js-url('plugins')}"><xsl:text> </xsl:text></script>
-        <script src="{ap:js-url('main')}"><xsl:text> </xsl:text></script>
+        <script src="/workspace/theme/assets/js/jquery.js"><xsl:text> </xsl:text></script>
+        <script src="/workspace/theme/assets/js/plugins.js"><xsl:text> </xsl:text></script>
+        <script src="/workspace/theme/assets/js/main.js"><xsl:text> </xsl:text></script>
 
         <xsl:apply-templates match="*" mode="page-js" />
 
