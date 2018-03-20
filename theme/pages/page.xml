@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:include href="../theme/templates/master.xsl" />
+  <xsl:include href="../templates/master.xsl" />
 
   <xsl:template match="data">
 
@@ -16,7 +16,7 @@
 
   </xsl:template>
 
-  <xsl:include href="../theme/partials/partial.xsl" />
+  <xsl:include href="../partials/partial.xsl" />
 
   <xsl:template match="*" mode="page-css"></xsl:template>
   <xsl:template match="*" mode="page-js"></xsl:template>
