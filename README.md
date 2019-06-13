@@ -20,7 +20,7 @@ Features
 * Automated build system using Gulp and a bunch helper packages.
 * Concatinated and compressed single `main-[hash].css` file that is auto prefixed and purged of all unused rules and classes.
 * Concatinated and compressed single `main-[hash].js` file.
-* [Tailwind CSS](https://tailwindcss.com/) utility first CSS framework for rapidly building custom designs
+* [Tailwind CSS](https://tailwindcss.com/) utility first CSS framework for rapidly building custom designs.
 * [Turbolinks](https://github.com/turbolinks/turbolinks) feature for faster page loads and a progress bar for slower database driven pages.
 * Master .xsl example.
 * Portable page .xsl example.
