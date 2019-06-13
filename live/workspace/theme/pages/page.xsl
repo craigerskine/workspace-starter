@@ -8,17 +8,19 @@
 
     <!-- /content -->
 
-    <!-- partial -->
-    <xsl:for-each select="//*">
-      <xsl:apply-templates select="." mode="some-list" />
-    </xsl:for-each>
-    <!-- /partial -->
+    <!-- partial example -->
+    <xsl:apply-templates select="." mode="some-list" />
+    <!-- /partial example -->
 
   </xsl:template>
 
   <xsl:include href="../partials/partial.xsl" />
 
-  <xsl:template match="*" mode="page-css"></xsl:template>
-  <xsl:template match="*" mode="page-js"></xsl:template>
+  <xsl:template match="*" mode="page-css">
+    <!-- add your per page CSS -->
+  </xsl:template>
+  <xsl:template match="*" mode="page-js">
+    <!-- add your per page JS -->
+  </xsl:template>
 
 </xsl:stylesheet>

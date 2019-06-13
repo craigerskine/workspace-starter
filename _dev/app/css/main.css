@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+/* add your css */
+h1,h2,h3,h4,h5,h6 { @apply mb-4 leading-tight; }
+p,ul,ol,table { @apply mb-4; }
+ul ul,ul ol,ol ol,ol ul { @apply mb-0; }
+table table { @apply mb-0; }
+iframe { @apply mb-4; }
+img,svg { @apply inline-block; }
+
+.turbolinks-progress-bar { @apply .bg-blue-400; }
+
+@tailwind utilities;
+
+@variants responsive {
+  .transition { transition: all .25s; }
+}

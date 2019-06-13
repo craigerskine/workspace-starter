@@ -1,0 +1,24 @@
+{
+  "name": "pxl.media",
+  "version": "1.0.0",
+  "description": "pxl.media website",
+  "main": "index.js",
+  "scripts": {
+    "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
+  },
+  "author": "Craig Erskine",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-hash": "*",
+    "gulp-hash-references": "*",
+    "gulp-postcss": "*",
+    "gulp-purgecss": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "tailwindcss": "*"
+  }
+}
