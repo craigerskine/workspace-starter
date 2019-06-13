@@ -13,7 +13,7 @@ Usage
 * Open the `_dev` folder in a command prompt.
 * `./node_modules/.bin/gulp`
 * Edit the `master.xsl`, `*.css`, `*.js` files in the `app` folder as well as any `*.xsl` in the `/live/workspace/theme/[pages | partials | utilities]/` and save your changes to see the magic happen. Any changes you make will auto compile the .xsl, .css, .js files and maintain a hashed version of the assets while also automatically keeping the hashed file name references updated in your `/live/workspace/theme/templates/master.xsl`. Then just sync your changes up to your server using your favorite method and you are all set.
-* **NOTE** DO NOT edit the main master.xsl file in `/live/workspace/theme/templates/` as it will cause you to loose potential changes laster down the road.
+* **NOTE**: DO NOT edit the main master.xsl file in `/live/workspace/theme/templates/` as it will cause you to loose potential changes later down the road.
 
 Features
 --------
