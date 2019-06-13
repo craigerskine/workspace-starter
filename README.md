@@ -5,7 +5,7 @@ Installation
 ------------
 * Install [node.js](https://nodejs.org).
 * Download this repo.
-* Open a the containing `_dev` folder in a command prompt.
+* Open the containing `_dev` folder in a command prompt.
 * `npm install`
 
 Usage
