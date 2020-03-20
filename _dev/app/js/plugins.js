@@ -1,1 +1,1 @@
-// add your jquery plugins
+// add your jQuery plugins here
