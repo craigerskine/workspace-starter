@@ -17,10 +17,12 @@
         </title>
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link href="/workspace/theme/assets/css/main-a74f9594.css" rel="stylesheet" data-turbolinks-track="reload" />
+        <xsl:comment><![CDATA[[if !IE]>]]></xsl:comment>
+        <link href="/workspace/theme/assets/css/main-e47081de.css" rel="stylesheet" data-turbolinks-track="reload" />
         <xsl:apply-templates match="*" mode="page-css" />
-        <script src="/workspace/theme/assets/js/main-9a633739.js" data-turbolinks-track="reload"><xsl:attribute name="defer"></xsl:attribute><xsl:text> </xsl:text></script>
+        <script src="/workspace/theme/assets/js/main-080b6db6.js" data-turbolinks-track="reload"><xsl:attribute name="defer"></xsl:attribute><xsl:text> </xsl:text></script>
         <xsl:apply-templates match="*" mode="page-js" />
+        <xsl:comment><![CDATA[<![endif]]]></xsl:comment>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="turbolinks-cache-control" content="no-preview" />
       </head>
@@ -49,10 +51,13 @@
         </footer>
 
         <script>
-          window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-          ga('create', 'UA-XXXXXXX-X', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-XXXXXXX-X', 'auto');
+          ga('send', 'pageview');
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async="async"><xsl:text> </xsl:text></script>
 
       </body>
     </html>

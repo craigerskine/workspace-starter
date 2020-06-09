@@ -17,10 +17,12 @@
         </title>
         <meta name="description" content="" />
         <meta name="author" content="" />
+        <xsl:comment><![CDATA[[if !IE]>]]></xsl:comment>
         <link href="/workspace/theme/assets/css/main.css" rel="stylesheet" data-turbolinks-track="reload" />
         <xsl:apply-templates match="*" mode="page-css" />
         <script src="/workspace/theme/assets/js/main.js" data-turbolinks-track="reload"><xsl:attribute name="defer"></xsl:attribute><xsl:text> </xsl:text></script>
         <xsl:apply-templates match="*" mode="page-js" />
+        <xsl:comment><![CDATA[<![endif]]]></xsl:comment>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="turbolinks-cache-control" content="no-preview" />
       </head>

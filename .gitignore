@@ -79,6 +79,5 @@ typings/
 .DS_Store
 node_modules
 dist/
-asset-manifest.json
 package-lock.json
 _dev/_dropbox_node_prep.scpt
